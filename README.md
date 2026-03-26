@@ -227,8 +227,8 @@ Application deployed using Vercel.
 
 ## 🔗 Links
 
-* 🔗 Repository: https://github.com/jotovio/Valora
-* 🌍 Live Demo: (add here)
+* 🔗 Repository: https://github.com/jotovio/Valora  
+* 🌍 Live Demo: [Access Valora](https://jotovio.github.io/Valora/)
 
 ---
 
