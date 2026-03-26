@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Valora</title>
+    <link rel="icon" href="images/valora-logo.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-top">
+            <div class="logo">
+                <h1>Valora</h1>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="navbar-controls" id="navbar-controls">
+                <input type="text" id="nav-search" class="nav-search" placeholder="Buscar calculadora...">
+                <select id="currency-select" class="currency-select" aria-label="Selecione a moeda"></select>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                    <div class="toggle-track">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon">🌑</span>
+                        <div class="toggle-thumb"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <button class="nav-btn active" data-calc="jurosSimples">Juros Simples</button>
+            <button class="nav-btn" data-calc="jurosCompostos">Juros Compostos</button>
+            <button class="nav-btn" data-calc="salarioLiquido">Salário Líquido</button>
+            <button class="nav-btn" data-calc="porcentagem">Porcentagem</button>
+            <button class="nav-btn" data-calc="investimento">Investimento</button>
+        </nav>
+    </header>
+
+    <main class="viewport">
+        <div class="slider" id="calculator-slider">
+            <section class="slide" id="slide-jurosSimples">
+                <div class="calculator-card" id="container-jurosSimples"></div>
+            </section>
+            <section class="slide" id="slide-jurosCompostos">
+                <div class="calculator-card" id="container-jurosCompostos"></div>
+            </section>
+            <section class="slide" id="slide-salarioLiquido">
+                <div class="calculator-card" id="container-salarioLiquido"></div>
+            </section>
+            <section class="slide" id="slide-porcentagem">
+                <div class="calculator-card" id="container-porcentagem"></div>
+            </section>
+            <section class="slide" id="slide-investimento">
+                <div class="calculator-card" id="container-investimento"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Valora - Sistema de Agentes Colaborativos</p>
+    </footer>
+
+    <!-- JS principal como módulo -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
